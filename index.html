@@ -25,21 +25,27 @@
             </div>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center gap-8">
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8">
                 <a class="font-label-md text-label-md text-primary dark:text-secondary-container border-b-2 border-primary dark:border-secondary-container pb-1" href="#">Beranda</a>
                 <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Profil</a>
                 <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Berita</a>
                 <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Layanan</a>
                 <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Galeri</a>
                 <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Informasi</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Pengaduan</a>
             </nav>
 
             <!-- Actions -->
             <div class="flex items-center gap-2 md:gap-4">
+                <!-- Search -->
                 <button class="p-2 rounded-full hover:bg-surface-subtle transition-colors">
                     <span class="material-symbols-outlined text-on-surface-variant">search</span>
                 </button>
-                <a class="hidden sm:inline-flex bg-primary text-on-primary px-4 md:px-6 py-2 md:py-2.5 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" href="#">Pengaduan</a>
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-surface-subtle transition-colors">
+                    <span id="theme-icon-light" class="material-symbols-outlined text-on-surface-variant">dark_mode</span>
+                    <span id="theme-icon-dark" class="material-symbols-outlined text-on-surface-variant hidden">light_mode</span>
+                </button>
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-surface-subtle transition-colors">
                     <span class="material-symbols-outlined text-on-surface-variant">menu</span>
@@ -56,7 +62,7 @@
                 <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="#">Layanan</a>
                 <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="#">Galeri</a>
                 <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="#">Informasi</a>
-                <a class="block mt-2 text-center bg-primary text-on-primary px-4 py-3 rounded-lg font-label-md text-label-md" href="#">Pengaduan</a>
+                <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="#">Pengaduan</a>
             </div>
         </nav>
     </header>
