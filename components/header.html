@@ -1,0 +1,52 @@
+<header id="site-header" class="sticky top-0 w-full z-50 bg-surface-white dark:bg-surface-container-highest shadow-md h-16 md:h-20 transition-all duration-300 ease-in-out">
+    <div class="flex justify-between items-center w-full px-4 md:px-margin-desktop max-w-container-max mx-auto h-full">
+        <!-- Logo & Brand -->
+        <div class="flex items-center gap-3 md:gap-4">
+            <a href="index.html" class="flex items-center gap-3 md:gap-4">
+                <img alt="Logo Dinkominfo" class="h-10 md:h-12 object-contain" src="assets/logo-kominfo.png"/>
+                <div class="hidden lg:block">
+                    <h1 class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed leading-none">Dinkominfo</h1>
+                    <p class="text-label-sm font-label-sm text-on-surface-variant">Kabupaten Pekalongan</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-6 lg:gap-8" aria-label="Navigasi utama">
+            <a data-nav="index.html" class="nav-link font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="index.html">Beranda</a>
+            <a data-nav="content-page.html" class="nav-link font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="pages/content-page.html">Profil</a>
+            <a data-nav="articles.html,article-detail.html" class="nav-link font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="pages/articles.html">Berita</a>
+            <a data-nav="layanan.html" class="nav-link font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="pages/layanan.html">Layanan</a>
+            <a data-nav="galeri.html" class="nav-link font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="pages/galeri.html">Galeri</a>
+            <a data-nav="unduhan.html" class="nav-link font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="pages/unduhan.html">Informasi</a>
+            <a data-nav="kontak.html" class="nav-link font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="pages/kontak.html">Pengaduan</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-2 md:gap-4">
+            <button aria-label="Cari" class="p-2 rounded-full hover:bg-surface-subtle transition-colors">
+                <span class="material-symbols-outlined text-on-surface-variant">search</span>
+            </button>
+            <button aria-label="Ganti tema" id="theme-toggle" class="p-2 rounded-full hover:bg-surface-subtle transition-colors">
+                <span id="theme-icon-light" class="material-symbols-outlined text-on-surface-variant">dark_mode</span>
+                <span id="theme-icon-dark" class="material-symbols-outlined text-on-surface-variant hidden">light_mode</span>
+            </button>
+            <button aria-label="Buka menu" id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-surface-subtle transition-colors">
+                <span class="material-symbols-outlined text-on-surface-variant">menu</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-surface-white border-t border-border-light" aria-label="Navigasi mobile">
+        <div class="px-4 py-4 space-y-1">
+            <a data-nav-mobile="index.html" class="nav-mobile-link block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="index.html">Beranda</a>
+            <a data-nav-mobile="content-page.html" class="nav-mobile-link block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="pages/content-page.html">Profil</a>
+            <a data-nav-mobile="articles.html,article-detail.html" class="nav-mobile-link block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="pages/articles.html">Berita</a>
+            <a data-nav-mobile="layanan.html" class="nav-mobile-link block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="pages/layanan.html">Layanan</a>
+            <a data-nav-mobile="galeri.html" class="nav-mobile-link block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="pages/galeri.html">Galeri</a>
+            <a data-nav-mobile="unduhan.html" class="nav-mobile-link block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="pages/unduhan.html">Informasi</a>
+            <a data-nav-mobile="kontak.html" class="nav-mobile-link block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="pages/kontak.html">Pengaduan</a>
+        </div>
+    </nav>
+</header>
