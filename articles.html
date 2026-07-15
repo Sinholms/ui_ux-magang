@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Berita dan informasi terbaru dari Dinas Komunikasi dan Informatika Kabupaten Pekalongan."/>
+    <script>(function(){try{var t=localStorage.getItem('theme'); if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';} document.documentElement.classList.remove('light','dark'); document.documentElement.classList.add(t);}catch(e){}})();</script>
+    <title>Berita - Dinkominfo Kabupaten Pekalongan</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="tailwind-config.js"></script>
+</head>
+<body class="text-on-surface bg-surface-container-low">
+    <header class="sticky top-0 w-full z-50 bg-surface-white dark:bg-surface-container-highest shadow-md h-16 md:h-20 transition-all duration-300 ease-in-out">
+        <div class="flex justify-between items-center w-full px-4 md:px-margin-desktop max-w-container-max mx-auto h-full">
+            <div class="flex items-center gap-3 md:gap-4">
+                <a href="index.html" class="flex items-center gap-3 md:gap-4">
+                    <img alt="Logo Dinkominfo" class="h-10 md:h-12 object-contain" src="logo kominfo.png"/>
+                    <div class="hidden lg:block">
+                        <h1 class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed leading-none">Dinkominfo</h1>
+                        <p class="text-label-sm font-label-sm text-on-surface-variant">Kabupaten Pekalongan</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8" aria-label="Navigasi utama">
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="index.html">Beranda</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="content-page.html">Profil</a>
+                <a class="font-label-md text-label-md text-primary dark:text-secondary-container border-b-2 border-primary dark:border-secondary-container pb-1" href="articles.html" aria-current="page">Berita</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="layanan.html">Layanan</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="galeri.html">Galeri</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="unduhan.html">Informasi</a>
+                <a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="kontak.html">Pengaduan</a>
+            </nav>
+            <div class="flex items-center gap-2 md:gap-4">
+                <button aria-label="Cari" class="p-2 rounded-full hover:bg-surface-subtle transition-colors">
+                    <span class="material-symbols-outlined text-on-surface-variant">search</span>
+                </button>
+                <button aria-label="Ganti tema" id="theme-toggle" class="p-2 rounded-full hover:bg-surface-subtle transition-colors">
+                    <span id="theme-icon-light" class="material-symbols-outlined text-on-surface-variant">dark_mode</span>
+                    <span id="theme-icon-dark" class="material-symbols-outlined text-on-surface-variant hidden">light_mode</span>
+                </button>
+                <button aria-label="Buka menu" id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-surface-subtle transition-colors">
+                    <span class="material-symbols-outlined text-on-surface-variant">menu</span>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-surface-white border-t border-border-light" aria-label="Navigasi seluler">
+            <div class="px-4 py-4 space-y-1">
+                <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="index.html">Beranda</a>
+                <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="content-page.html">Profil</a>
+                <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-primary bg-primary-fixed" href="articles.html" aria-current="page">Berita</a>
+                <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="layanan.html">Layanan</a>
+                <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="galeri.html">Galeri</a>
+                <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="unduhan.html">Informasi</a>
+                <a class="block px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-subtle" href="kontak.html">Pengaduan</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-primary text-on-primary py-10 md:py-14">
+            <div class="max-w-container-max mx-auto px-4 md:px-margin-desktop">
+                <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-label-sm font-label-sm opacity-80">
+                    <a href="index.html" class="hover:underline">Beranda</a>
+                    <span class="material-symbols-outlined text-sm" aria-hidden="true">chevron_right</span>
+                    <span aria-current="page">Berita</span>
+                </nav>
+                <h2 class="font-headline-lg text-headline-lg mt-4">Berita &amp; Informasi</h2>
+                <p class="text-body-md font-body-md opacity-80 mt-2 max-w-2xl">Kabar terbaru, agenda, dan informasi layanan dari Dinas Komunikasi dan Informatika Kabupaten Pekalongan.</p>
+            </div>
+        </section>
+
+        <section class="py-10 md:py-section-padding max-w-container-max mx-auto px-4 md:px-margin-desktop">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-8 md:mb-10">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Berita Terkini</h2>
+                    <p class="text-body-md font-body-md text-on-surface-variant mt-2">Pilih kategori untuk menemukan informasi yang Anda butuhkan.</p>
+                </div>
+                <div class="flex flex-wrap gap-2" aria-label="Filter kategori berita">
+                    <button class="px-4 py-2 rounded-full bg-primary text-on-primary text-label-md font-label-md" type="button" aria-pressed="true">Semua</button>
+                    <button class="px-4 py-2 rounded-full bg-surface-white border border-border-light text-on-surface-variant text-label-md font-label-md hover:border-primary hover:text-primary transition-colors" type="button" aria-pressed="false">Teknologi</button>
+                    <button class="px-4 py-2 rounded-full bg-surface-white border border-border-light text-on-surface-variant text-label-md font-label-md hover:border-primary hover:text-primary transition-colors" type="button" aria-pressed="false">Layanan</button>
+                    <button class="px-4 py-2 rounded-full bg-surface-white border border-border-light text-on-surface-variant text-label-md font-label-md hover:border-primary hover:text-primary transition-colors" type="button" aria-pressed="false">Informasi</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-gutter">
+                <article class="bg-surface-white rounded-xl overflow-hidden border border-border-light hover-card flex flex-col">
+                    <img alt="Pelatihan keamanan siber Dinkominfo" class="h-48 w-full object-cover" width="640" height="360" src="https://dinkominfo.pekalongankab.go.id/_next/image?url=https%3A%2F%2Fcdn.pekalongankab.go.id%2Fuploads%2FKemanan_Siber_3_2a13d3ee69.jpeg&amp;w=1200&amp;q=75"/>
+                    <div class="p-5 md:p-6 flex flex-col grow">
+                        <div class="flex flex-wrap items-center gap-2 mb-3"><span class="text-label-sm font-label-sm text-primary bg-primary-fixed px-3 py-1 rounded-full">Teknologi</span><time class="text-label-sm font-label-sm text-on-surface-variant" datetime="2024-12-10">10 Des 2024</time></div>
+                        <h3 class="font-headline-md text-headline-md text-primary leading-tight line-clamp-2">Dinkominfo Tingkatkan Kapasitas SDM Digital Melalui Pelatihan Cybersecurity</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2 mt-3">Workshop intensif untuk operator IT memperkuat perlindungan data dan layanan publik Kabupaten Pekalongan.</p>
+                        <a class="mt-5 text-primary font-label-md text-label-md font-bold flex items-center gap-2 hover:underline" href="article-detail.html">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                </article>
+                <article class="bg-surface-white rounded-xl overflow-hidden border border-border-light hover-card flex flex-col">
+                    <img alt="Rapat koordinasi layanan digital" class="h-48 w-full object-cover" loading="lazy" width="640" height="360" src="https://dinkominfo.pekalongankab.go.id/_next/image?url=https%3A%2F%2Fcdn.pekalongankab.go.id%2Fuploads%2FRakor_JKS_1265587acc.jpeg&amp;w=1200&amp;q=75"/>
+                    <div class="p-5 md:p-6 flex flex-col grow">
+                        <div class="flex flex-wrap items-center gap-2 mb-3"><span class="text-label-sm font-label-sm text-primary bg-primary-fixed px-3 py-1 rounded-full">Layanan</span><time class="text-label-sm font-label-sm text-on-surface-variant" datetime="2024-11-28">28 Nov 2024</time></div>
+                        <h3 class="font-headline-md text-headline-md text-primary leading-tight line-clamp-2">Command Center Perkuat Respons Cepat Pelayanan Publik</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2 mt-3">Pusat integrasi data membantu pemerintah daerah memantau layanan dan menindaklanjuti kebutuhan warga secara cepat.</p>
+                        <a class="mt-5 text-primary font-label-md text-label-md font-bold flex items-center gap-2 hover:underline" href="article-detail.html">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                </article>
+                <article class="bg-surface-white rounded-xl overflow-hidden border border-border-light hover-card flex flex-col">
+                    <img alt="Kegiatan literasi digital masyarakat" class="h-48 w-full object-cover" loading="lazy" width="640" height="360" src="https://picsum.photos/seed/literasi-digital/640/360"/>
+                    <div class="p-5 md:p-6 flex flex-col grow">
+                        <div class="flex flex-wrap items-center gap-2 mb-3"><span class="text-label-sm font-label-sm text-primary bg-primary-fixed px-3 py-1 rounded-full">Informasi</span><time class="text-label-sm font-label-sm text-on-surface-variant" datetime="2024-11-16">16 Nov 2024</time></div>
+                        <h3 class="font-headline-md text-headline-md text-primary leading-tight line-clamp-2">Literasi Digital Dorong Masyarakat Bijak Bermedia Sosial</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2 mt-3">Edukasi bersama komunitas dan pelajar memperkuat kemampuan warga dalam menyaring informasi di ruang digital.</p>
+                        <a class="mt-5 text-primary font-label-md text-label-md font-bold flex items-center gap-2 hover:underline" href="article-detail.html">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                </article>
+                <article class="bg-surface-white rounded-xl overflow-hidden border border-border-light hover-card flex flex-col">
+                    <img alt="Forum satu data Kabupaten Pekalongan" class="h-48 w-full object-cover" loading="lazy" width="640" height="360" src="https://picsum.photos/seed/satu-data/640/360"/>
+                    <div class="p-5 md:p-6 flex flex-col grow">
+                        <div class="flex flex-wrap items-center gap-2 mb-3"><span class="text-label-sm font-label-sm text-primary bg-primary-fixed px-3 py-1 rounded-full">Pemerintahan</span><time class="text-label-sm font-label-sm text-on-surface-variant" datetime="2024-10-31">31 Okt 2024</time></div>
+                        <h3 class="font-headline-md text-headline-md text-primary leading-tight line-clamp-2">Forum Satu Data Wujudkan Data Pemerintahan yang Terpadu</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2 mt-3">Kolaborasi perangkat daerah memastikan data pembangunan tersedia, mutakhir, dan mudah dimanfaatkan.</p>
+                        <a class="mt-5 text-primary font-label-md text-label-md font-bold flex items-center gap-2 hover:underline" href="article-detail.html">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                </article>
+                <article class="bg-surface-white rounded-xl overflow-hidden border border-border-light hover-card flex flex-col">
+                    <img alt="Pelayanan publik digital" class="h-48 w-full object-cover" loading="lazy" width="640" height="360" src="https://picsum.photos/seed/pelayanan-publik/640/360"/>
+                    <div class="p-5 md:p-6 flex flex-col grow">
+                        <div class="flex flex-wrap items-center gap-2 mb-3"><span class="text-label-sm font-label-sm text-primary bg-primary-fixed px-3 py-1 rounded-full">Layanan</span><time class="text-label-sm font-label-sm text-on-surface-variant" datetime="2024-10-18">18 Okt 2024</time></div>
+                        <h3 class="font-headline-md text-headline-md text-primary leading-tight line-clamp-2">Pemerintah Daerah Perluas Akses Layanan Publik Digital</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2 mt-3">Pengembangan kanal layanan memudahkan masyarakat memperoleh informasi dan menyampaikan kebutuhan secara daring.</p>
+                        <a class="mt-5 text-primary font-label-md text-label-md font-bold flex items-center gap-2 hover:underline" href="article-detail.html">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                </article>
+                <article class="bg-surface-white rounded-xl overflow-hidden border border-border-light hover-card flex flex-col">
+                    <img alt="Dokumentasi kegiatan Dinkominfo" class="h-48 w-full object-cover" loading="lazy" width="640" height="360" src="https://picsum.photos/seed/dinkominfo-event/640/360"/>
+                    <div class="p-5 md:p-6 flex flex-col grow">
+                        <div class="flex flex-wrap items-center gap-2 mb-3"><span class="text-label-sm font-label-sm text-primary bg-primary-fixed px-3 py-1 rounded-full">Kegiatan</span><time class="text-label-sm font-label-sm text-on-surface-variant" datetime="2024-10-04">04 Okt 2024</time></div>
+                        <h3 class="font-headline-md text-headline-md text-primary leading-tight line-clamp-2">Kolaborasi Komunitas Percepat Transformasi Digital Daerah</h3>
+                        <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2 mt-3">Kemitraan pemerintah, pelaku usaha, dan komunitas membuka ruang inovasi bagi masyarakat Kabupaten Pekalongan.</p>
+                        <a class="mt-5 text-primary font-label-md text-label-md font-bold flex items-center gap-2 hover:underline" href="article-detail.html">Baca Selengkapnya <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                </article>
+            </div>
+
+            <nav class="flex items-center justify-center gap-2 mt-10" aria-label="Navigasi halaman">
+                <a href="articles.html" aria-label="Halaman sebelumnya" class="w-10 h-10 rounded-lg border border-border-light bg-surface-white flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary"><span class="material-symbols-outlined">chevron_left</span></a>
+                <a href="articles.html" aria-current="page" class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center font-label-md">1</a>
+                <a href="articles.html" class="w-10 h-10 rounded-lg border border-border-light bg-surface-white flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary font-label-md">2</a>
+                <a href="articles.html" class="w-10 h-10 rounded-lg border border-border-light bg-surface-white flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary font-label-md">3</a>
+                <span class="w-8 text-center text-on-surface-variant">…</span>
+                <a href="articles.html" aria-label="Halaman berikutnya" class="w-10 h-10 rounded-lg border border-border-light bg-surface-white flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary"><span class="material-symbols-outlined">chevron_right</span></a>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="bg-primary dark:bg-surface-container-lowest text-on-primary">
+        <div class="w-full py-12 md:py-section-padding px-4 md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-gutter max-w-container-max mx-auto">
+            <div class="md:col-span-4 space-y-6">
+                <h3 class="font-headline-md text-headline-md text-surface-white">Dinkominfo</h3>
+                <p class="font-body-md text-body-md opacity-80">Dinas Komunikasi dan Informatika Kabupaten Pekalongan berkomitmen memberikan layanan informasi dan teknologi terbaik bagi masyarakat.</p>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-3 opacity-80"><span class="material-symbols-outlined text-sm">location_on</span><span class="text-label-md font-label-md">Jl. Krakatau Nomor 2, Kajen, Pekalongan, Jawa Tengah</span></div>
+                    <div class="flex items-center gap-3 opacity-80"><span class="material-symbols-outlined text-sm">mail</span><span class="text-label-md font-label-md">dinkominfo@pekalongankab.go.id</span></div>
+                </div>
+            </div>
+            <div class="md:col-span-2 md:col-start-6 space-y-6">
+                <h4 class="font-label-md text-label-md font-bold text-secondary-container">Aplikasi</h4>
+                <ul class="space-y-3">
+                    <li><a class="text-on-primary dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:underline decoration-secondary-container decoration-2 underline-offset-4 transition-opacity font-label-md text-label-md" href="https://pekalongankab.go.id">Website Resmi Pemerintah Kabupaten Pekalongan</a></li>
+                    <li><a class="text-on-primary dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:underline decoration-secondary-container decoration-2 underline-offset-4 transition-opacity font-label-md text-label-md" href="index.html">Dinas Komunikasi dan informatika Kabupaten Pekalongan</a></li>
+                    <li><a class="text-on-primary dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:underline decoration-secondary-container decoration-2 underline-offset-4 transition-opacity font-label-md text-label-md" href="https://ppid.pekalongankab.go.id">PPID Kabupaten Pekalongan</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 space-y-6">
+                <h4 class="font-label-md text-label-md font-bold text-secondary-container">Tautan</h4>
+                <ul class="space-y-3">
+                    <li><a class="text-on-primary dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:underline decoration-secondary-container decoration-2 underline-offset-4 transition-opacity font-label-md text-label-md" href="unduhan.html">JDIH</a></li>
+                    <li><a class="text-on-primary dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:underline decoration-secondary-container decoration-2 underline-offset-4 transition-opacity font-label-md text-label-md" href="layanan.html">E-Government</a></li>
+                    <li><a class="text-on-primary dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:underline decoration-secondary-container decoration-2 underline-offset-4 transition-opacity font-label-md text-label-md" href="https://pekalongankab.go.id">Portal Kabupaten</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-3 space-y-6">
+                <h4 class="font-label-md text-label-md font-bold text-secondary-container">Newsletter</h4>
+                <p class="text-label-sm font-label-sm opacity-70">Langganan berita terbaru langsung ke email Anda.</p>
+                <div class="flex gap-2">
+                    <label for="footer-email" class="sr-only">Email Anda</label>
+                    <input id="footer-email" class="bg-white/10 border-white/20 text-white rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-secondary-container outline-none transition-all placeholder:text-white/40" placeholder="Email Anda" type="email"/>
+                    <button aria-label="Berlangganan newsletter" class="bg-secondary-container text-on-secondary-container p-2 rounded-lg"><span class="material-symbols-outlined">send</span></button>
+                </div>
+            </div>
+            <div class="md:col-span-12 pt-8 md:pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="font-label-md text-label-md opacity-60 text-center md:text-left">© 2024 Dinkominfo Kabupaten Pekalongan. All rights reserved.</p>
+                <div class="flex gap-6 opacity-60">
+                    <a class="font-label-sm text-label-sm hover:text-white" href="content-page.html">Kebijakan Privasi</a>
+                    <a class="font-label-sm text-label-sm hover:text-white" href="layanan.html">Syarat &amp; Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
